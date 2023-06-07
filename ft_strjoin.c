@@ -6,7 +6,7 @@
 /*   By: ghelena- <ghelena-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/13 23:00:37 by ghelena-          #+#    #+#             */
-/*   Updated: 2023/06/05 16:22:41 by ghelena-         ###   ########.fr       */
+/*   Updated: 2023/06/07 20:16:18 by ghelena-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,16 +28,8 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	if (!s3)
 		return (NULL);
 	while (s1[i] != '\0')
-	{
-		s3[l] = s1[i];
-		l++;
-		i++;
-	}
+		s3[l++] = s1[i++];
 	while (s2[j] != '\0')
-	{
-		s3[l] = s2[j];
-		l++;
-		j++;
-	}
+		s3[l++] = s2[j++];
 	return (s3);
 }
